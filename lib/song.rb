@@ -18,7 +18,8 @@ class Song
   song = split_name[0].strip
   artist = split_name[1].strip
   new_song = self.new(song)
-  new_song.artist_name = artist  
+  new_song.artist_name = artist 
+  new_song
  end 
  
  def artist_name=(name)
