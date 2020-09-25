@@ -22,7 +22,7 @@ class Song
  
  def artist_name=(filename)
     split_name = filename.split("-")
-    artist = Artist.find_or_create_by_name(split_name[1])
+    self.artist = Artist.find_or_create_by_name(split_name[1])
     song.artist = artist
     Artist.add_song(song)
     song 
